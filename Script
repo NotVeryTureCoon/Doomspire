@@ -13,6 +13,14 @@ Section:NewButton("Fly", "Makes you Fly", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/Fly"))()
 end)
 
+Section:NewSlider("SetYourSpeed", "SetYourSpeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("SetYourJump", "SetYourJump", 500, 0, function(j) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = j
+end)
+
 
 local Tab = Window:NewTab("TELEPORTS")
 local Section = Tab:NewSection("RedTeleports")
