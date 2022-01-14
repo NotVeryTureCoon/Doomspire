@@ -1,0 +1,6 @@
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local hum = char.Humanoid
+local root = char.HumanoidRootPart
+
+root.CFrame = CFrame.new(game.Workspace.Blue3.Position)
