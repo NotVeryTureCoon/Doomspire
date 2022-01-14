@@ -90,9 +90,6 @@ ctrl.r = 0
 end
 end)
 Fly()
-
-
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Fly!!!", Text = "Press E to Stop Flying"})
 end)
 
 Section:NewSlider("SetYourSpeed", "SetYourSpeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
