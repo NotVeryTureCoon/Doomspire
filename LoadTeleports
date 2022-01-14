@@ -1,0 +1,150 @@
+
+local Teleport1Blue = Instance.new("Part")
+local Teleport2Blue = Instance.new("Part")
+local Teleport3Blue = Instance.new("Part")
+
+Teleport1Blue.Name = "Blue1"
+Teleport1Blue.Position = Vector3.new(0.350969, 24.95, 131.435)
+Teleport1Blue.Anchored = true
+Teleport1Blue.Material = "ForceField"
+Teleport1Blue.BrickColor = BrickColor.Blue()
+Teleport1Blue.Size = Vector3.new(1, 1, 1)
+Teleport1Blue.CanCollide = false
+Teleport1Blue.Parent = game.Workspace
+wait(1)
+
+
+Teleport2Blue.Name = "Blue2"
+Teleport2Blue.Position = Vector3.new(0.234081, 65.75, 130.174)
+Teleport2Blue.Anchored = true
+Teleport2Blue.Material = "ForceField"
+Teleport2Blue.BrickColor = BrickColor.Blue()
+Teleport2Blue.Size = Vector3.new(1, 1, 1)
+Teleport2Blue.CanCollide = false
+Teleport2Blue.Parent = game.Workspace
+wait(1)
+
+
+Teleport3Blue.Name = "Blue3"
+Teleport3Blue.Position = Vector3.new(159.586, 129.35, -0.860304)
+Teleport3Blue.Anchored = true
+Teleport3Blue.Material = "ForceField"
+Teleport3Blue.BrickColor = BrickColor.Blue()
+Teleport3Blue.Size = Vector3.new(1, 1, 1)
+Teleport3Blue.CanCollide = false
+Teleport3Blue.Parent = game.Workspace
+
+wait(1)
+
+local Teleport1Green = Instance.new("Part")
+local Teleport2Green = Instance.new("Part")
+local Teleport3Green = Instance.new("Part")
+
+Teleport1Green.Name = "Green1"
+Teleport1Green.Position = Vector3.new(0.463519, 24.95, -130.696)
+Teleport1Green.Anchored = true
+Teleport1Green.Material = "ForceField"
+Teleport1Green.BrickColor = BrickColor.Green()
+Teleport1Green.Size = Vector3.new(1, 1, 1)
+Teleport1Green.CanCollide = false
+Teleport1Green.Parent = game.Workspace
+wait(1)
+
+
+Teleport2Green.Name = "Green2"
+Teleport2Green.Position = Vector3.new(-0.336707, 65.75, -129.941)
+Teleport2Green.Anchored = true
+Teleport2Green.Material = "ForceField"
+Teleport2Green.BrickColor = BrickColor.Green()
+Teleport2Green.Size = Vector3.new(1, 1, 1)
+Teleport2Green.CanCollide = false
+Teleport2Green.Parent = game.Workspace
+wait(1)
+
+
+Teleport3Green.Name = "Green3"
+Teleport3Green.Position = Vector3.new(-3.50346, 129.35, -158.661)
+Teleport3Green.Anchored = true
+Teleport3Green.Material = "ForceField"
+Teleport3Green.BrickColor = BrickColor.Green()
+Teleport3Green.Size = Vector3.new(1, 1, 1)
+Teleport3Green.CanCollide = false
+Teleport3Green.Parent = game.Workspace
+
+wait(1)
+
+
+local Teleport1Yellow = Instance.new("Part")
+local Teleport2Yellow = Instance.new("Part")
+local Teleport3Yellow = Instance.new("Part")
+
+Teleport1Yellow.Name = "Yellow1"
+Teleport1Yellow.Position = Vector3.new(131.064, 24.95, -0.638634)
+Teleport1Yellow.Anchored = true
+Teleport1Yellow.Material = "ForceField"
+Teleport1Yellow.BrickColor = BrickColor.Yellow()
+Teleport1Yellow.Size = Vector3.new(1, 1, 1)
+Teleport1Yellow.CanCollide = false
+Teleport1Yellow.Parent = game.Workspace
+wait(1)
+
+
+Teleport2Yellow.Name = "Yellow2"
+Teleport2Yellow.Position = Vector3.new(130.91, 65.75, 2.04033)
+Teleport2Yellow.Anchored = true
+Teleport2Yellow.Material = "ForceField"
+Teleport2Yellow.BrickColor = BrickColor.Yellow()
+Teleport2Yellow.Size = Vector3.new(1, 1, 1)
+Teleport2Yellow.CanCollide = false
+Teleport2Yellow.Parent = game.Workspace
+wait(1)
+
+
+Teleport3Yellow.Name = "Yellow3"
+Teleport3Yellow.Position = Vector3.new(159.586, 129.35, -0.860304)
+Teleport3Yellow.Anchored = true
+Teleport3Yellow.Material = "ForceField"
+Teleport3Yellow.BrickColor = BrickColor.Yellow()
+Teleport3Yellow.Size = Vector3.new(1, 1, 1)
+Teleport3Yellow.CanCollide = false
+Teleport3Yellow.Parent = game.Workspace
+
+wait(1)
+
+
+local Teleport1Red = Instance.new("Part")
+local Teleport2Red = Instance.new("Part")
+local Teleport3Red = Instance.new("Part")
+
+Teleport1Red.Name = "Red1"
+Teleport1Red.Position = Vector3.new(-130.623, 24.95, -0.202133)
+Teleport1Red.Anchored = true
+Teleport1Red.Material = "ForceField"
+Teleport1Red.BrickColor = BrickColor.Red()
+Teleport1Red.Size = Vector3.new(1, 1, 1)
+Teleport1Red.CanCollide = false
+Teleport1Red.Parent = game.Workspace
+wait(1)
+
+
+Teleport2Red.Name = "Red2"
+Teleport2Red.Position = Vector3.new(-131.28, 65.75, 0.806808)
+Teleport2Red.Anchored = true
+Teleport2Red.Material = "ForceField"
+Teleport2Red.BrickColor = BrickColor.Red()
+Teleport2Red.Size = Vector3.new(1, 1, 1)
+Teleport2Red.CanCollide = false
+Teleport2Red.Parent = game.Workspace
+wait(1)
+
+
+Teleport3Red.Name = "Red3"
+Teleport3Red.Position = Vector3.new(-164.818, 129.35, 0.351921)
+Teleport3Red.Anchored = true
+Teleport3Red.Material = "ForceField"
+Teleport3Red.BrickColor = BrickColor.Red()
+Teleport3Red.Size = Vector3.new(1, 1, 1)
+Teleport3Red.CanCollide = false
+Teleport3Red.Parent = game.Workspace
+
+print"All Teleports Loaded"
