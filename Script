@@ -6,36 +6,35 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("LoadTeleports", "Loads Teleports without this you cant teleport", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/LoadTeleports"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/LoadTeleports"))()
 end)
 
-Section:NewSlider("InfJump", "InfJump", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-local Player = game:GetService'Players'.LocalPlayer;
-local UIS = game:GetService'UserInputService';
+Section:NewButton("Infjump", "Infjump", function()
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
 
-_G.JumpHeight = 50;
+	_G.JumpHeight = 50;
 
-function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	function Action(Object, Function) if Object ~= nil then Function(Object); end end
 
-UIS.InputBegan:connect(function(UserInput)
-    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
-        Action(Player.Character.Humanoid, function(self)
-            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
-                Action(self.Parent.HumanoidRootPart, function(self)
-                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
-                end)
-            end
-        end)
-    end
-end)
-end)
+	UIS.InputBegan:connect(function(UserInput)
+		if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+			Action(Player.Character.Humanoid, function(self)
+				if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+					Action(self.Parent.HumanoidRootPart, function(self)
+						self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+					end)
+				end
+			end)
+		end
+	end)
 end)
 Section:NewSlider("SetYourSpeed", "SetYourSpeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 Section:NewSlider("SetYourJump", "SetYourJump", 500, 0, function(j) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = j
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = j
 end)
 
 
@@ -43,70 +42,70 @@ local Tab = Window:NewTab("TELEPORTS")
 local Section = Tab:NewSection("RedTeleports")
 
 Section:NewButton("TeleportsToTheBottomOfRed", "TeleportsToTheBottomOfRed", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseBottom"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseBottom"))()
 end)
 
 Section:NewButton("TeleportsToTheMiddleOfRed", "TeleportsToTheMiddleOfRed", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseMiddle"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseMiddle"))()
 end)
 
 Section:NewButton("TeleportsToTheTopOfRed", "TeleportsToTheMiddleOfTop", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseTop"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportRedBaseTop"))()
 end)
 
 local Section = Tab:NewSection("BlueTeleports")
 
 Section:NewButton("TeleportsToTheBottomOfBlue", "TeleportsToTheBottomOfBlue", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseBottom"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseBottom"))()
 end)
 
 Section:NewButton("TeleportsToTheMiddleofBlue", "TeleportsToTheMiddleofBlue", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseMiddle"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseMiddle"))()
 end)
 
 Section:NewButton("TeleportsToTheTopofBlue", "TeleportsToTheTopofBlue", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseTop"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportBlueBaseTop"))()
 end)
 
 local Section = Tab:NewSection("GreenTeleports")
 
 Section:NewButton("TeleportsToTheBottomOfGreen", "TeleportsToTheBottomOfGreen", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseBottom"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseBottom"))()
 end)
 
 Section:NewButton("TeleportsToTheMiddleOfGreen", "TeleportsToTheMiddleOfGreen", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseMiddle"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseMiddle"))()
 end)
 
 Section:NewButton("TeleportsToTheTopOfGreen", "TeleportsToTheTopOfGreen", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseTop"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportGreenBaseTop"))()
 end)
 
 local Section = Tab:NewSection("YellowTeleports")
 
 Section:NewButton("TeleportsToTheBottomOfYellow", "TeleportsToTheBottomOfYellow", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseBottom"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseBottom"))()
 end)
 
 Section:NewButton("TeleportsToTheMiddleOfYellow", "TeleportsToTheMiddleOfYellow", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseMiddle"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseMiddle"))()
 end)
 
 Section:NewButton("TeleportsToTheTopOfYellow", "TeleportsToTheTopOfYellow", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseTop"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/Doomspire/main/TeleportYellowBaseTop"))()
 end)
 
 
-   local Tab = Window:NewTab("Settings")
+local Tab = Window:NewTab("Settings")
 local Section = Tab:NewSection("Settings")
 
 Section:NewKeybind("Setkeybind to open or close", "bababy code", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
 Section:NewButton("Copy Discord link:)", "simd", function()
-        setclipboard("https://discord.gg/ja5g4ym7WB")
-    toclipboard("https://discord.gg/ja5g4ym7WB")
-    end)
+	setclipboard("https://discord.gg/ja5g4ym7WB")
+	toclipboard("https://discord.gg/ja5g4ym7WB")
+end)
 
 
 
@@ -121,10 +120,10 @@ Section:NewButton("Copy Discord link:)", "simd", function()
 
 
 
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " loaded successfully!"})
-    wait(10)
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Sorry if there is not much this wwas the best i could do for now"})
-    wait(10)
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Join My Discord for more Guis!"})
-    
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " loaded successfully!"})
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Sorry if there is not much this wwas the best i could do for now"})
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Join My Discord for more Guis!"})
+
 
