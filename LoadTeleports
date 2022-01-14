@@ -26,7 +26,7 @@ wait(1)
 
 
 Teleport3Blue.Name = "Blue3"
-Teleport3Blue.Position = Vector3.new(159.586, 129.35, -0.860304)
+Teleport3Blue.Position = Vector3.new(-1.61234, 129.35, 159.799)
 Teleport3Blue.Anchored = true
 Teleport3Blue.Material = "ForceField"
 Teleport3Blue.BrickColor = BrickColor.Blue()
