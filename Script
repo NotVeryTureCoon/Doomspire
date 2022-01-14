@@ -108,7 +108,7 @@ Section:NewButton("Copy Discord link:)", "simd", function()
     wait(10)
     game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Join My Discord for more Guis!"})
     
-    
+ game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()   
         repeat wait()
   until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
 local mouse = game.Players.LocalPlayer:GetMouse()
@@ -189,3 +189,4 @@ ctrl.r = 0
 end
 end)
 Fly()
+end)
