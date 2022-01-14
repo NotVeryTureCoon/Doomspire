@@ -1,0 +1,10 @@
+local antiVoid = Instance.new("Part")
+
+antiVoid.Name = "AntiVoid"
+antiVoid.Position = Vector3.new(-8.0012, 0.800064, -150.998)
+antiVoid.Anchored = true
+antiVoid.Material = "ForceField"
+antiVoid.BrickColor = BrickColor.Red()
+antiVoid.Size = Vector3.new(2040, 1, 2040)
+print"Loaded Anti-Void"
+antiVoid.Parent = game.Workspace
