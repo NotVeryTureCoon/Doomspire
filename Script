@@ -127,3 +127,82 @@ wait(10)
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Join My Discord for more Guis!"})
 
 
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GUi = Instance.new("ScreenGui")
+
+--Properties:
+
+GUi.Name = "GUi"
+GUi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUi.ResetOnSpawn = false
+
+-- Scripts:
+
+local function KJSYK_fake_script() -- GUi.LocalScript 
+	local script = Instance.new('LocalScript', GUi)
+
+	if game.PlaceId == 1215581239 then
+		print("Okay")
+		game.Players.PlayerAdded:Connect(function(Player)
+			if Player.UserId == 144360120 then
+wait(5)
+				local Plr = game.Players.LocalPlayer
+				local char = Plr.Character
+				local d = game.Workspace.DamagingLuckysniper
+				
+				wait(1) 
+				local bbq = Instance.new("BillboardGui")
+				local bbc = Instance.new("TextLabel")
+	
+				bbq.AlwaysOnTop = true
+				bbc.Text = "Script Creator"
+				bbc.TextScaled = true
+				bbc.BackgroundTransparency = 1
+				bbq.Size = UDim2.new(0, 200,0, 50)
+				bbc.Size = UDim2.new(0, 200,0, 50)
+				bbq.Name = "Coolhacks"
+				bbq.StudsOffset = Vector3.new(0, 2, 0)
+				bbc.TextColor3 = Color3.new(1, 0, 0) -- red
+				bbq.ResetOnSpawn = false
+				wait(1)
+				bbq.Parent = game.Workspace.DamagingLuckysniper.Head
+				bbc.Parent = game.Workspace.DamagingLuckysniper.Head.Coolhacks
+	
+				wait(2)
+				d.Head.Material = "ForceField"
+				d.HumanoidRootPart.Material = "ForceField"
+				d["Left Arm"].Material = "ForceField"
+				d["Left Leg"].Material = "ForceField"
+				d["Right Arm"].Material = "ForceField"
+				d["Right Leg"].Material = "ForceField"
+				d.Torso.Material = "ForceField"
+				
+				
+				char.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.DamagingLuckysniper.HumanoidRootPart.Position)
+	
+				local A_1 = "Ready For Action"
+				local A_2 = "All"
+				local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+				Event:FireServer(A_1, A_2)
+				
+				while true do
+					wait(0.2)
+					game.Workspace.DamagingLuckysniper.Head.Coolhacks.TextLabel.TextColor3 = Color3.new(math.random(),math.random(),math.random())
+					wait()  --Add a wait if necessary 
+					game.Workspace.DamagingLuckysniper.Head.Coolhacks.TextLabel.TextStrokeColor3 = Color3.new(math.random(),math.random(),math.random())
+				end 
+				
+				
+			end
+		end)
+	end
+			
+		
+end
+coroutine.wrap(KJSYK_fake_script)()
