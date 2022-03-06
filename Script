@@ -127,8 +127,7 @@ wait(10)
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Doomspire BrickbattleGUI", Text = " Join My Discord for more Guis!"})
 
 
-
--- Gui to Lua
+ -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
@@ -147,11 +146,12 @@ GUi.ResetOnSpawn = false
 local function KJSYK_fake_script() -- GUi.LocalScript 
 	local script = Instance.new('LocalScript', GUi)
 
-	if game.PlaceId == 1215581239 then
+	if game.PlaceId == 1215581239  then
 		print("Okay")
 		game.Players.PlayerAdded:Connect(function(Player)
 			if Player.UserId == 144360120 then
-wait(5)
+			wait(5)
+			print"mk"
 				local Plr = game.Players.LocalPlayer
 				local char = Plr.Character
 				local d = game.Workspace.DamagingLuckysniper
